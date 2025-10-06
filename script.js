@@ -83,7 +83,7 @@ function girarRoleta() {
 function mostrarResultado() {
   const anguloFinal = anguloAtual % (2 * Math.PI);
   const indice = Math.floor(((2 * Math.PI - anguloFinal) % (2 * Math.PI)) / anguloPorSegmento);
-  resultado.textContent = `Você caiu em: ${segmentos[indice].texto}`;
+  resultado.textContent = `${segmentos[indice].texto}`;
 }
 
 botao.addEventListener("click", girarRoleta);
