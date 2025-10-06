@@ -1,14 +1,16 @@
 body {
+  margin: 0;
+  padding: 0;
+  background-color: #dbdbdb;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fef6ad;
-  text-align: center;
-  padding: 20px;
 }
 
 .container {
-  max-width: 700px;
-  margin: auto;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5vh;
 }
 
 canvas {
@@ -18,8 +20,8 @@ canvas {
 }
 
 button {
-  padding: 10px 200px;
-  font-size: 18px;
+  padding: 3vh 20vh;
+  font-size: 48px;
   background-color: #0078d4;
   color: white;
   border: none;
@@ -35,4 +37,6 @@ button:hover {
   margin-top: 20px;
   font-size: 20px;
   font-weight: bold;
+  font-size: 38px;
+  text-align: center;
 }

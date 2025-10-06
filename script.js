@@ -4,14 +4,14 @@ const botao = document.getElementById("botao-girar");
 const resultado = document.getElementById("resultado");
 
 const segmentos = [
-  { texto: "ALEGRIA", cor: "#FFD700" },
-  { texto: "ORGULHO", cor: "#FFA500" },
-  { texto: "CORAGEM", cor: "#FF4500" },
-  { texto: "AMIZADE", cor: "#FF69B4" },
-  { texto: "RESPEITO", cor: "#800080" },
-  { texto: "GRATIDÃO", cor: "#1E90FF" },
-  { texto: "SUPER-PODER", cor: "#20B2AA" },
-  { texto: "MÚSICA", cor: "#32CD32" }
+  { texto: "ALEGRIA", cor: "#fcd319" },
+  { texto: "ORGULHO", cor: "#f8922e" },
+  { texto: "CORAGEM", cor: "#ed593b" },
+  { texto: "AMIZADE", cor: "#f07d9c" },
+  { texto: "RESPEITO", cor: "#8163ab" },
+  { texto: "GRATIDÃO", cor: "#43a8d2" },
+  { texto: "SUPER-PODER", cor: "#4ebaa3" },
+  { texto: "MÚSICA", cor: "#89bd3e" }
 ];
 
 const raio = canvas.width / 2;
@@ -56,7 +56,7 @@ function desenharSeta() {
   ctx.lineTo(x - 30, y - 15);  // canto superior da base
   ctx.lineTo(x - 30, y + 15);  // canto inferior da base
   ctx.closePath();
-  ctx.fillStyle = "#333";
+  ctx.fillStyle = "#ffffffff";
   ctx.fill();
 }
 function girarRoleta() {
